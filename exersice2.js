@@ -1,6 +1,6 @@
 //1. If marks are greater than 60 then print Pass else print Fail
 
-let marks = 80;
+let marks = 90;
 
 if(marks>60){
     console.log("Pass")
