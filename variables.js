@@ -19,6 +19,7 @@
 // console.log(address);
 // console.log(city);
 // console.log(pincode);
+
 // console.log(name,adharNo,fatherName,accountNo,qualification,mobileNo,age,address,city,pincode);
 
 
