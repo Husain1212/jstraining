@@ -69,14 +69,18 @@
 
 // Ans - 9
 // for (let i = 11; i >= 1 ; i--) {
-//     let value = "" + "*";
+//     let value = "*";
+//     let spp = " ";
 //     if(i % 2 === 1){
-//         console.log(value.repeat(i))
+//         console.log(spp.repeat(12-i) + value.repeat(i))
 //     }
 // }
+
+//console.log(" ".repeat(5) + "$".repeat(1));
 
 // Ans -10
 
 // NaN
+
 
 
