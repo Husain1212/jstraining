@@ -1,4 +1,5 @@
 // print even numberes
+
 ```
 let evenNum = [1,2,3,4,5,12,6,7,8,,11,12,14,10,9];
 for(i = 0; i <evenNum.length; i++){
@@ -6,6 +7,7 @@ for(i = 0; i <evenNum.length; i++){
         console.log(evenNum[i])
     }
 }
+
 ```
 
 // print even numberes
@@ -21,6 +23,7 @@ for(i = 0; i <oddNum.length; i++){
 ```
 
 // 03 ek class m 10 students h . is class  k students ka average weight 45kg h. or jab class m teacher aata h to bad m sabka average weight 52kg ho jata h.to us teacher ka weight kitna h btao?
+
 ```
 
 let studentAverageWeight = 45;
@@ -72,12 +75,14 @@ for(i = 0 ; i<= arr_1.length; i++){
     */
 
     // Ans 1
+    
     ```
     let num_Array = [1,2,3,4,5,6,7,8]
     let newArr = []
     for(index_2 = num_Array.length-1 ; index_2 >=0 ; index_2--){
         console.log(num_Array[index_2])
     }
+    
     ```
 //reverse method
 ```
@@ -107,9 +112,7 @@ for(i = 0 ; i<= arr_1.length; i++){
 // ========================================== 27feb2023
 
 
-Ek array bnana hai 
-
-#1. Array ka starting se 2nd element and back se 2nd element equal hai kya. 
+//1. Array ka starting se 2nd element and back se 2nd element equal hai kya. 
 
 ```
 let array_1 = [1,6,23,4,5,3,8,2,9,6,7];
@@ -120,43 +123,53 @@ if(array_1[1] === array_1[arraylength-2]){
     console.log("element is false")
 };
 ```
-#2. Array me 3 new numbers push krne hai 
-   1 number unshift krna hai 
-   2 shift krne hai 
-   2 pop krne hai 
-Aur fir result check krna hai 
+
+// 2. Array me 3 new numbers push krne hai 
+//    1 number unshift krna hai 
+//    2 shift krne hai 
+//    2 pop krne hai 
+// Aur fir result check krna hai 
 
 
 // A(2)push
+
 ```
 let array_Add = [1,-2,3,4,5,-6,7,8];
 array_Add.push(10)
 array_Add.push(20)
 array_Add.push(30)
  console.log(array_Add)
-```
-// unshift
-```
+
+ ```
+
+ // unshift
+
+ ```
 array_Add.unshift(100)
  console.log(array_Add)
+
  ```
-// shift
-```
+
+ // shift
+
+ ```
 
 array_Add.shift()
  console.log(array_Add)
 
 ```
 
- //pop
- ```
+
+//pop
+
+```
  array_Add.pop()
  array_Add.pop()
  console.log(array_Add)
 
 ```
 
-3. Array ko reverse krke use ** se join krna hai 
+//3. Array ko reverse krke use ** se join krna hai 
 
 ```
 let array_rev = [1,2,3,4,5,6,7]
@@ -165,7 +178,7 @@ console.log(array_rev.join("**"))
 
 ```
 
-#4. Write a program to reverse the array using for loop
+//4. Write a program to reverse the array using for loop
 
 ```
 let num = [64, 32, 84, 92, 73, 93, 74, 93, 03, 73, 52];
@@ -178,11 +191,11 @@ for (let a = num.length - 1; a >= 0; a--) {
 
 
 
-#5. Write a program to sort the given array using for loop
+//5. Write a program to sort the given array using for loop
 
 &&
 
-#6. Move all the negative elements to one side of the array using for loop 
+//6. Move all the negative elements to one side of the array using for loop 
 
 
 ```
@@ -202,7 +215,7 @@ for(i = 0; i < array_sort.length; i++){
 ```
 
 
-7. Find the Union and Intersection of the two sorted arrays
+//7. Find the Union and Intersection of the two sorted arrays
 
 ```
 let arr1 = [10, 12, 13, 14]
