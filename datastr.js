@@ -116,7 +116,7 @@
 //   if (num1 === arr1[i]) {
 //     ++count;
 //   }
-// } if (count >= 3){
+// } if (count > 3){
 //   console.log(`${num1} is present more than ${count} times`)
 // } else {
 //   console.log(`${num1} is present ${count} times.`)
