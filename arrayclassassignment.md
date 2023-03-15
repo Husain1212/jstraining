@@ -7,7 +7,6 @@ for(i = 0; i <evenNum.length; i++){
         console.log(evenNum[i])
     }
 }
-
 ```
 
 // print even numberes
@@ -19,13 +18,11 @@ for(i = 0; i <oddNum.length; i++){
         console.log(oddNum[i])
     }
 }
-
 ```
 
 // 03 ek class m 10 students h . is class  k students ka average weight 45kg h. or jab class m teacher aata h to bad m sabka average weight 52kg ho jata h.to us teacher ka weight kitna h btao?
 
 ```
-
 let studentAverageWeight = 45;
 let totalStudent = 10
 let allStudentWeight = studentAverageWeight*totalStudent;
@@ -33,7 +30,6 @@ let teacher = 1;
 let newWeightAverage = 52;
 let teacherWeight = newWeightAverage * (totalStudent + teacher) - allStudentWeight;
 console.log(teacherWeight);
-
 ```
 
 // 4 write a array and sum array numbers but please check below condition;
@@ -64,7 +60,6 @@ for(i = 0 ; i<= arr_1.length; i++){
         
     } console.log(arraySum)
     console.log(arraySum/numberArray.length)
-
 ```
     // ================================================
 
@@ -79,7 +74,7 @@ for(i = 0 ; i<= arr_1.length; i++){
     ```
     let num_Array = [1,2,3,4,5,6,7,8]
     let newArr = []
-    for(index = num_Array.length-1; index>=0 ; index--){
+    for(index_2 = num_Array.length-1 ; index_2 >=0 ; index_2--){
         console.log(num_Array[index_2])
     }
     
@@ -88,12 +83,10 @@ for(i = 0 ; i<= arr_1.length; i++){
 ```
     num_Array.reverse();
     console.log(num_Array)
-
 ```    
 
     // Ans 2
 ```    
-
     let next_Array = [1,6,3,4,5,7,8]
     next_Array.sort();
     console.log(next_Array)
@@ -102,12 +95,9 @@ for(i = 0 ; i<= arr_1.length; i++){
     // Ans 3 
 
 ```    
-
     let new_Array = [1,-2,3,4,5,-6,7,8];
-
    new_Array.reverse();
    console.log(new_Array)
-
 ```
 
 // ========================================== 27feb2023
@@ -140,7 +130,6 @@ array_Add.push(10)
 array_Add.push(20)
 array_Add.push(30)
  console.log(array_Add)
-
  ```
 
  // unshift
@@ -148,16 +137,13 @@ array_Add.push(30)
  ```
 array_Add.unshift(100)
  console.log(array_Add)
-
  ```
 
  // shift
 
  ```
-
 array_Add.shift()
  console.log(array_Add)
-
 ```
 
 
@@ -167,7 +153,6 @@ array_Add.shift()
  array_Add.pop()
  array_Add.pop()
  console.log(array_Add)
-
 ```
 
 //3. Array ko reverse krke use ** se join krna hai 
@@ -176,7 +161,6 @@ array_Add.shift()
 let array_rev = [1,2,3,4,5,6,7]
 array_rev.reverse()
 console.log(array_rev.join("**"))
-
 ```
 
 //4. Write a program to reverse the array using for loop
@@ -187,7 +171,6 @@ let array11 = [];
 for (let a = num.length - 1; a >= 0; a--) {
   console.log(num[a]);
 }
-
 ```
 
 
@@ -202,7 +185,6 @@ for (let a = num.length - 1; a >= 0; a--) {
 ```
 let array_sort = [1,2,3,-1,-5,-3,5,2]
 let new_SortArray = []
-
 for(i = 0; i < array_sort.length; i++){
     if(array_sort[i] > 0){
         new_SortArray.unshift(array_sort[i]);
@@ -212,7 +194,6 @@ for(i = 0; i < array_sort.length; i++){
     }
     
 } console.log(new_SortArray)
-
 ```
 
 
@@ -235,5 +216,3 @@ for (let index = 0; index < cancat.length; index++) {
 console.log(unique)
 console.log(interSection)
 ```
-
-
