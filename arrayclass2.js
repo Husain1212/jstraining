@@ -79,7 +79,7 @@ for(i = 0 ; i<= arr_1.length; i++){
     ```
     let num_Array = [1,2,3,4,5,6,7,8]
     let newArr = []
-    for(index_2 = num_Array.length-1 ; index_2 >=0 ; index_2--){
+    for(index = num_Array.length-1; index>=0 ; index--){
         console.log(num_Array[index_2])
     }
     

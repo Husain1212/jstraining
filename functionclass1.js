@@ -1,3 +1,5 @@
+
+
 //1. Function ko 1 number pass krna hai. jo number pass kia hai us number ki table print krni hai. for example 5 
 //5*1=5
 //5*2=10
@@ -108,9 +110,18 @@ function multimax(a,b){
             console.log(a*index)
         }
     }
-    // for(i = a; i<= b; i++){
-    //     console.log(i )
-    // }
+} multimax(5,100)
+
+```
+
+```
+function multimax(a,b){
+    for (let index = 1; index <= b; index++) {
+
+        if(index % a === 0){
+            console.log(index)
+        }
+    }
 } multimax(5,100)
 
 ```
