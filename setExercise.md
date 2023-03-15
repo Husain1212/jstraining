@@ -20,7 +20,7 @@ console.log(newObj)
 
 ```
 
-#3. Check if mySet contains the value 2.
+## 3. Check if mySet contains the value 2.
 
 ```
 let array = [1,2,3]
