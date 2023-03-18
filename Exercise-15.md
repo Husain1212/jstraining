@@ -89,3 +89,35 @@ for(i = 0 ; i < sortMyDetails.length; i++){
  console.log(sortMyDetails[i][0] , sortMyDetails[i][1])
 }
 ```
+## 9 . Create an object to hold information on your favorite recipe. It should have properties for title (a string), servings (a number), and ingredients (an array of strings).
+On separate lines (one console.log statement for each), log the recipe information so it looks like:
+Mole
+Serves: 2
+Ingredients:
+cinnamon
+cumin
+cocoa
+
+
+## 10 . Create a JavaScript function inside an object which finds max of 3 numbers. Now call this function of the object and print the maximum number.
+```
+function maxobject(){
+
+    let numberObject = {
+        number1 : 12,
+        number2 : 24,
+        number3 : 127,
+        number4 : 77,
+        number5 : 9,
+        number6 : 88,
+    } 
+    let maxNumber = Object.entries(numberObject)
+    let maximum = maxNumber[0][1]
+    for(i = 0 ; i < maxNumber.length; i++){
+        if(maxNumber[i][1] > maximum ){
+            maximum = maxNumber[i][1];
+        }   
+    }
+     console.log(maximum)
+} maxobject()
+```
