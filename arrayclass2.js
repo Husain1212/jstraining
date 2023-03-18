@@ -10,7 +10,7 @@ for(i = 0; i <evenNum.length; i++){
 
 ```
 
-// print even numberes
+// print odd numberes
 
 ```
 let oddNum = [1,2,3,4,5,12,6,7,8,,11,12,14,10,9];
