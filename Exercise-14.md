@@ -129,3 +129,83 @@ return intersection
     return total + firstValue
   } console.log(average/array2.length)
 ```
+## 11. Write a function that takes an array of numbers and returns a new array that only contains numbers that are greater than 5. Use filter function
+```
+  let bigNumber = [2,3,145,66,7]
+  function testGreater(arra){
+    return arra > 5
+
+  }
+  let bigArray = bigNumber.filter(testGreater)
+  console.log(bigArray)
+```
+
+## 12. Write a function that takes an array of numbers and returns a new array where each element is the original element plus 1. use map function
+```
+  let plusArray = [1,2,3,4,5]
+  let addArray = plusArray.map(newNum)
+  function newNum(num){
+    return num + 1
+  } console.log(addArray)
+```
+
+## 13. Write a function that takes an array of numbers and returns a new array that contains only the unique numbers using reduce.
+
+## 14. Write a function that takes an array of strings and returns the total number of characters in all the strings using reduce.
+```
+  let arrayOfStr = ["Hello","Wecode","Academy"]
+  let newStr = arrayOfStr.reduce(addnum,0)
+
+  function addnum(oldValue,newValue){
+    return oldValue + newValue.length
+  }
+  console.log(newStr)
+```
+## 15. Write a function that takes an array of strings and sorts them by their length in ascending order.
+```
+   let arrOfStr = ["Hello","My","Name","Wecode","Academy"]
+
+  function sorting(val1,val2){
+    return val1.length - val2.length
+  }
+  console.log(arrOfStr.sort(sorting))
+```
+
+## 18. Write a function that takes an array of strings and returns a new array with only the strings that contain the letter "a".
+```
+  let string = ['taiyab','khan','boy','husain','brother']
+  function findStr(string){
+    let newAns = []
+    for(i = 0; i < string.length; i++ ){
+      if(string[i].includes("a"))
+      newAns.push(string[i])
+      // console.log(newAns)
+    }
+    return newAns
+  } console.log(findStr(string))
+```
+## 19. Write a function that takes an array of numbers and returns a new array with the numbers sorted in ascending order.
+```
+  let arrOfNum = [1,22,34,12,2,65,5,44]
+
+  function sorted(val1,val2){
+    return val1 - val2 
+  }
+  console.log(arrOfNum.sort(sorted))
+```
+## 20. Write a function that takes an array of strings and flattens each string into an array of characters, then flattens the result into a single array.
+
+ Example usage
+let arr = ['hello', 'world'];
+console.log(flattenStrings(arr)); // Output: ['h', 'e', 'l', 'l', 'o', 'w', 'o', 'r', 'l', 'd'] */
+```
+let arr = ['hello', 'world']
+function chk(arr){
+  let ans1 = '' 
+  for(i = 0 ; i < arr.length ; i++){
+    ans1 = ans1 + arr[i]
+  }
+  return ans1.split('')
+}
+console.log(chk(arr))
+```
