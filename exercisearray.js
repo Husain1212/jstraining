@@ -24,6 +24,12 @@ for(i=0; i < arr3.length ; i++){
 
 //Create an array with six elements and print out each element using a forEach loop.
 
+const numbers = [5, 4, 1, 3, 2];
+numbers.forEach(myFunction);
+
+function myFunction(item) {
+  console.log(item)
+}
 
 
 //### Question 5

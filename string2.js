@@ -1,16 +1,16 @@
-// // // 1. Take any String with some space before and after. Store string length. Now do below exercises:
+// 1. Take any String with some space before and after. Store string length. Now do below exercises:
 
-// // //     a. remove space from both end and print new length of the returned string 
-// // //     b. remove space from start and then print new string length 
-// // //     c. remove space from end then print new string length 
-// // // a
-// // let string = "     Take any String with some space before and after  ";
+//     a. remove space from both end and print new length of the returned string 
+//     b. remove space from start and then print new string length 
+//     c. remove space from end then print new string length 
+// a
+// let string = "     Take any String with some space before and after  ";
 
-// // console.log((string.trim()).length);
-// // console.log((string.trimStart()).length);
-// // console.log((string.trimEnd()).length);
+// console.log((string.trim()).length);
+// console.log((string.trimStart()).length);
+// console.log((string.trimEnd()).length);
 
-// // // 2. Take any string in lowercase. Now using toUppercase function check if uppercase of the string is equal to uppercase of function or not 
+// 2. Take any string in lowercase. Now using toUppercase function check if uppercase of the string is equal to uppercase of function or not 
 
 // let string ="Wecode Academy";
 // let str1 = string.toUpperCase();
@@ -20,36 +20,43 @@
 // else{
 //     console.log("no");
 // }
-// // // 3. Introduction about your self. Use concat function 
+// 3. Introduction about your self. Use concat function 
 
 
 // console.log("My".concat(" name "," is"," taiyab"," husain"))
 
 
-// // // 4. Take a big string and split it using below characters/string 
-// // //     a. " "   console.log(ans.length);
-// // //     b. ","
-// // //     c. "is"
-// // //     d. "a"
+// 4. Take a big string and split it using below characters/string 
+//     a. " "   console.log(ans.length);
+//     b. ","
+//     c. "is"
+//     d. "a"
 
-// let intro = "My name, is wecode, academy";
-// console.log(intro.split(" "));
-// console.log(intro.split(","));
-// console.log(intro.split("is"));
-// console.log(intro.split("a"));
+let intro = "My name, is wecode, academy";
+console.log(intro.split(" "));
+console.log(intro.split(","));
+console.log(intro.split("is"));
+console.log(intro.split("a"));
 
 
+let strr = "";
+for(i = 1; i<= 5; i++){
+    // if(i % 2 === 0){
 
-// // for(i = 5; i>= 1; i--){
-// //     console.log("$".repeat(i).concat ("#".repeat(i)));
-// // }
+    //     strr = strr + "$$"
+    // } else{
+    //     strr = strr + "#"
+    // }
+    // console.log(strr)
+    console.log("$".repeat(i).concat ("#".repeat(i)));
+}
 
-// // let mobile1 = "82900";
-// // let mobile2 = "63838";
-// // console.log(mobile1.padEnd(10, "*"));
-// // console.log(mobile2.padStart(10, "*"));
-// let intr = "TaiYab HuSaiN"
-// console.log(intr.length);
+// let mobile1 = "82900";
+// let mobile2 = "63838";
+// console.log(mobile1.padEnd(10, "*"));
+// console.log(mobile2.padStart(10, "*"));
+let intr = "TaiYab HuSaiN"
+console.log(intr.length);
 
 // console.log(intr.toUpperCase());
 
@@ -69,10 +76,18 @@
 
 // Date=======19feb2023
 // Ans = 01
-// let str = "My name is taiyab husain";
-// let newStr = str.split("");
-// console.log(newStr.length);
-
+let str = "My name is taiyab husain";
+let newStr = str.split(" ");
+let valueStr = ""
+console.log(newStr);
+for(i = 0; i < newStr.length; i++){
+    if(i % 2 === 0){
+        valueStr = valueStr + " " + newStr[i].toUpperCase()
+    }else{valueStr = valueStr + " " + newStr[i].toLowerCase()
+    }
+    // console.log(valueStr)
+}
+console.log(valueStr)
 // Ans 02
 
 // 11111
@@ -82,32 +97,32 @@
 // 5
 
 
-// for (let i = 5; i >= 1; i--) {
-//     let value = i + "";
-//   console.log(value.repeat(i));
-//   }
+for (let i = 5; i >= 1; i--) {
+    let value = i + "";
+  console.log(value.repeat(i));
+  }
 
 
-// let data = "hello world".split("");
+let data = "hello world".split("");
 
-// for (let value of data){
-// console.log(value);
+for (let value of data){
+console.log(value);
 
-// }
+}
 
 
 
 //"my NAME is TAIYAB husain";
 
-// let str = "my name is taiyab husain".split();
-// console.log(str);
-// let nStr = "";
-// let index = 0;
-// for(let value of str){
-//     if(index % 2 === 0){
-//         nStr = nStr + " " + value.toLowerCase();
-//     } else{
-//         nStr = nStr + " " + value.toUpperCase();
+let str = "my name is taiyab husain".split();
+console.log(str);
+let nStr = "";
+let index = 0;
+for(let value of str){
+    if(index % 2 === 0){
+        nStr = nStr + " " + value.toLowerCase();
+    } else{
+        nStr = nStr + " " + value.toUpperCase();
 
 //     }
 //     index++;

@@ -22,16 +22,16 @@
 
 
 
-// const obj = {
-//     name : "taiyab husain",
-//     address : "jhotwara jaipur",
-//     mobileNo : 8290063838,
-// }
-// let enteries = Object.entries(obj)
-// // console.log(enteries)
-// for(i = 0 ; i<enteries.length; i++){
-//     console.log(enteries[i][0],enteries[i][1])
-// }
+const obj = {
+    name : "taiyab husain",
+    address : "jhotwara jaipur",
+    mobileNo : 8290063838,
+}
+let newObj = Object.entries(obj)
+console.log(newObj)
+for(i = 0 ; i<newObj.length; i++){
+    console.log(newObj[i][0],newObj[i][1])
+}
 
 
 // const personalDetails = {
@@ -119,9 +119,8 @@ const person ={
 console.log(Object.entries(person))
 const newDetails =Object.entries(person)
 console.log(newDetails.toString())
-const obje = newDetails.includes("Taiyab")
-console.log(obje)
-
+// const obje = newDetails.includes("taiyab")
+// console.log(obje)
 
 
 // console.log(person.otherDetails)
@@ -129,3 +128,19 @@ console.log(obje)
 
 // person.firstName = "Abbas"
 // console.log(person)
+
+let student = {
+name : "David Rayy",
+sclass : "VI",
+rollno : 12 };
+
+console.log(Object.keys(student))
+console.log(Object.values(student))
+console.log(Object.entries(student))
+
+let arrayStudent = Object.entries(student)
+for(i = 0 ; i < arrayStudent.length; i++){
+ console.log(arrayStudent[i][0] , arrayStudent[i][1])
+}
+// console.log(arrayStudent)
+

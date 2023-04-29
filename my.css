@@ -1,0 +1,17 @@
+html,body{
+    background-color: rgb(157, 255, 127);
+}
+
+.h1{
+    color: brown;
+}
+
+.details{
+    color: aquamarine;
+    font-size: 20px;
+    margin-bottom: 100px;
+}
+
+#Account{
+    color: red;
+}

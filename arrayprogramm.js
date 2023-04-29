@@ -51,3 +51,66 @@
 // }
 // console.log(ans)
 
+//flat()
+// let arr = [11,12,[1,2,3],13]
+
+// console.log(arr.flat())
+
+// sort()==================
+
+// let arr = [1, 113, 111, 2, 11, 22, 3, 21, 33, 1111111];
+// function test(val1, val2) {
+//   return val2 - val1; //Descening order
+// }
+// function test2(val1, val2) {
+//   return val1 - val2; //Ascending order
+// }
+// console.log(arr.sort(test));
+// console.log(arr.sort(test2));
+
+
+//======================
+
+// let num = [1, 2, 3, 4, 5, 10];
+// let num1 = [2, 3, 5, 6, 10, 12];
+// let arr = [];
+// for (let i = 0; i < num.length; i++) {
+  // if (!num1.includes(num[i])) {
+  //   arr.push(num[i]);
+  // }
+//   if (!num.includes(num1[i])) {
+//     arr.push(num1[i]);
+//   }
+// }
+// console.log(num);
+// console.log(num1);
+// console.log(arr);
+
+//==========================
+do array ki value ko diffrence nikalna h.
+let arr1 = [2,4,3,5,6];//2,6
+let arr2 = [7,4,3,5,8,9,0];//7,8,9,0
+let arr3 = [];
+for(let value of arr1){
+  if(!arr2.includes(value)){
+    arr3.push(value)
+  }
+}
+  for(let value of arr2){
+  if(!arr1.includes(value)){
+    arr3.push(value)
+  }
+}
+console.log(arr3);
+
+//=====================================
+//reduce
+
+// let arr1 = [2,4,3,5,6];
+
+// function test(total,firstValue){
+//   return total + firstValue
+// }let a = arr1.reduce(test)
+// console.log(a)
+
+
