@@ -8,10 +8,10 @@ A property's value can be a function, array in which case the property is known 
 ```
  ## 2 . What is the difference between dot notation and bracket notation for accessing object properties?
 ```
- Dot Notation only allows static keys 
- while Bracket Notation accepts dynamic keys. 
- Static key here means that the key is typed directly, 
- while Dynamic key here means that the key is evaluated from an expression.
+ - Dot Notation only allows static keys 
+ - while Bracket Notation accepts dynamic keys. 
+ - Static key here means that the key is typed directly, 
+ - while Dynamic key here means that the key is evaluated from an expression.
 ```
 ## 3 . How do you loop through the properties of an object in JavaScript?
 ```
