@@ -7,7 +7,7 @@ function passwordMatched(){
     if(enteredPassword === myPassword){
                return true ;
     } else{
-        error()   
+       alert("password is wrong")  
     }
 }
 function checkbalance(){

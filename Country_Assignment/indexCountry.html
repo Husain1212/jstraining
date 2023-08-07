@@ -1,0 +1,105 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Country Details</title>
+</head>
+<body>
+    <label >Country_Name : </label>
+     <input id="country" type="text" placeholder="Enter your country name">
+    <button id="result" type="submit">Submit</button></br>
+    <label>Country_Capital : </label>
+     <input id="Country_Capital" type="text" value=""></br>
+    <label>Country_Population : </label>
+     <input id="Country_Population" type="text" value=""><br>
+     <image id="img" src=""></image>
+      <script src="countryDetails.js"></script>
+    
+</body>
+</html> -->
+    
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Country Details</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+
+        .container {
+            max-width: 400px;
+            margin: 0 auto;
+        }
+
+        label {
+            display: block;
+            margin-top: 10px;
+        }
+
+        input[type="text"],
+        button {
+            padding: 8px;
+            font-size: 14px;
+        }
+
+        button {
+            margin-top: 10px;
+        }
+
+        .country-details {
+            margin-top: 20px;
+        }
+
+        .flag {
+            width: 64px;
+            height: 42px;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <label>Country Name:</label>
+        <input id="country" type="text" placeholder="Enter your country name">
+        <button id="result" type="submit">Submit</button>
+
+        <div class="country-details">
+            <label>Country Capital:</label>
+            <span id="Country_Capital"></span>
+
+            <label>Country Population:</label>
+            <span id="Country_Population"></span>
+
+            <img id="img" class="flag" src="" alt="">
+        </div>
+    </div>
+
+    <script src="countryDetails.js"></script>
+    <script>
+        document.getElementById("result").addEventListener("click", function () {
+            let countryName = document.getElementById("country").value;
+            const countryRequest = new XMLHttpRequest();
+            countryRequest.open("GET", `https://restcountries.com/v3.1/name/${countryName}`);
+            countryRequest.send();
+            countryRequest.onload = function () {
+                const response = JSON.parse(this.responseText);
+                console.log(response);
+                document.getElementById("Country_Capital").textContent = response[0].capital[0];
+                document.getElementById("Country_Population").textContent = response[0].population;
+                document.getElementById("img").src = `https://flagsapi.com/${response[0].flags.png}`;
+            }
+        });
+    </script>
+</body>
+
+</html>

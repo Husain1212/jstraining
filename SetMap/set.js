@@ -73,19 +73,19 @@ console.log(difference)
 
 //11. Create an array called myArray containing the values 1, 2, 2, and 3.
 
-// let myArray = [1,2,2,3]
-// console.log(myArray)
+let myArray = [1,2,2,3]
+console.log(myArray)
 
 //12. Convert myAray to a set called mySet2.
-// let mySet2 = new Set(myArray)
-// console.log(mySet2)
+let mySet2 = new Set(myArray)
+console.log(mySet2)
 
 //13. Check if mySet2 contains the value 2.
-// console.log(mySet2.has(2))
+console.log(mySet2.has(2))
 
 //14. Remove all duplicate values from myArray and store the result in a new array called uniqueArray.
-// let uniqueArray = new Set([...myArray])
-// console.log(uniqueArray)
+let uniqueArray = new Set([...myArray])
+console.log(uniqueArray)
 
 //15
 let myArray = [1, 2, 2, 3];
@@ -101,29 +101,17 @@ let myArray = [1, 2, 2, 3];
 
 
 
+set.add(11)
+set.add(12)
+console.log(set)
+set.delete(5)
+console.log(set)
 
-
-
-
-
-
-
-
-
-
-
-
-// set.add(11)
-// set.add(12)
-// console.log(set)
-// set.delete(5)
-// console.log(set)
-
-// set.forEach(test) 
-// function test (num){
-//     return num
-// }
-// console.log(set)
-// for(let value of set){
-//     console.log(value)
-// }
+set.forEach(test) 
+function test (num){
+    return num
+}
+console.log(set)
+for(let value of set){
+    console.log(value)
+}
